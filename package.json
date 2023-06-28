@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "[![Actions Status](https://github.com/Timo4ey/fullstack-javascript-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Timo4ey/fullstack-javascript-project-44/actions)",
   "main": "bin/brain-games.js",
   "type": "module",
@@ -14,5 +14,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
     "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }

@@ -2,10 +2,17 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Timo4ey/fullstack-javascript-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Timo4ey/fullstack-javascript-project-44/actions)",
-  "main": "index.js",
+  "main": "bin/brain-games.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Timofey Yakovishin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.8.8"
+  }
 }

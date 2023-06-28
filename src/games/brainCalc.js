@@ -12,10 +12,9 @@ const brainCalcInner = () => {
   const ans = sym[symbols](numOne, numTwo);
 
   const response = Number(asker(`${numOne} ${symbols} ${numTwo}`));
-  console.log([ans === response, ans, response]);
   return [ans === response, ans, response];
 };
 
-const brainCalc = () => cycleThreeRounds(brainCalcInner);
+const brainCalc = () => cycleThreeRounds(brainCalcInner, 'What is the result of the expression?');
 
 export default brainCalc;

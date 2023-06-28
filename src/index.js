@@ -14,11 +14,12 @@ const asker = (message) => {
   return ans;
 };
 
-function cycleThreeRounds(func) {
+function cycleThreeRounds(func, message) {
   let status;
   const name = greeting();
   let ans;
   let response;
+  console.log(message);
   for (let i = 0; i < 3; i += 1) {
     [status, ans, response] = func();
     if (status === true) {

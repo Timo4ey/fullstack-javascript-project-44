@@ -9,6 +9,9 @@ const brainEvenInner = () => {
   return [ans === response, ans, response];
 };
 
-const brainEven = () => cycleThreeRounds(brainEvenInner);
+const brainEven = () => cycleThreeRounds(
+  brainEvenInner,
+  'Answer "yes" if the number is even, otherwise answer "no".',
+);
 
 export default brainEven;

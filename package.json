@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "[![Actions Status](https://github.com/Timo4ey/fullstack-javascript-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Timo4ey/fullstack-javascript-project-44/actions)",
   "main": "bin/brain-games.js",
   "type": "module",
@@ -13,7 +13,8 @@
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-gcd": "bin/brain-gcd.js"
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "devDependencies": {
     "eslint": "^8.43.0",

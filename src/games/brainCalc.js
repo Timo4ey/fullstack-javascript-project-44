@@ -4,7 +4,7 @@ import {
   sum, subtract, multiply, random,
 } from '../math/math.js';
 
-const brainCalcInner = () => {
+const brainCalcWorker = () => {
   const numOne = random(1, 200);
   const numTwo = random(1, 150);
   const symbols = ['+', '-', '*'][random(0, 2)];
@@ -15,6 +15,6 @@ const brainCalcInner = () => {
   return [ans === response, ans, response];
 };
 
-const brainCalc = () => cycleThreeRounds(brainCalcInner, 'What is the result of the expression?');
+const brainCalc = () => cycleThreeRounds(brainCalcWorker, 'What is the result of the expression?');
 
 export default brainCalc;

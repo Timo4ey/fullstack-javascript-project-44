@@ -3,7 +3,7 @@ import { asker, cycleThreeRounds } from '../index.js';
 import { random } from '../math/math.js';
 import nod from '../math/nod.js';
 
-const brainGcdInner = () => {
+const brainGcdWorker = () => {
   const numOne = random(1, 100);
   const numTwo = random(1, 100);
   const ans = nod(numOne, numTwo);
@@ -12,7 +12,7 @@ const brainGcdInner = () => {
 };
 
 const brainGcd = () => cycleThreeRounds(
-  brainGcdInner,
+  brainGcdWorker,
   'Find the greatest common divisor of given numbers.',
 );
 

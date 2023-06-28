@@ -2,7 +2,7 @@
 import { asker, cycleThreeRounds } from '../index.js';
 import { random } from '../math/math.js';
 
-const brainEvenInner = () => {
+const brainEvenWorker = () => {
   const guessNum = random(1, 100);
   const ans = guessNum % 2 === 0 ? 'yes' : 'no';
   const response = asker(guessNum);
@@ -10,7 +10,7 @@ const brainEvenInner = () => {
 };
 
 const brainEven = () => cycleThreeRounds(
-  brainEvenInner,
+  brainEvenWorker,
   'Answer "yes" if the number is even, otherwise answer "no".',
 );
 

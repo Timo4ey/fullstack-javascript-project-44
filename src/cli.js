@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import readlineSync from 'readline-sync';
 
 const greeting = () => {
@@ -7,5 +6,4 @@ const greeting = () => {
   return name;
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export { greeting };

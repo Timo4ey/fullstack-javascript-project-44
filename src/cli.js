@@ -1,9 +1,18 @@
-import readlineSync from 'readline-sync';
+import readlineSync from "readline-sync";
 
 const greeting = () => {
-  const name = readlineSync.question('Your answer: ');
+  console.log("Welcome to the Brain Games!");
+  const name = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${name}!`);
   return name;
 };
 
-export { greeting };
+const asker = (message) => {
+  const ans = readlineSync.question(message);
+  return ans;
+};
+
+const realRandom = () =>
+  Math.abs(Math.floor(Math.random() * 100) - Math.floor(Math.random() * 100));
+
+export { greeting, asker, realRandom };
